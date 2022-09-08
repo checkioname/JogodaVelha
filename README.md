@@ -1,3 +1,1 @@
-# Quiz
-# JogodaVelha
-# JogodaVelha
+# Jogo da Velha
