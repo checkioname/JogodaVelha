@@ -48,12 +48,12 @@ function verificaGanhador() {
 
   else if (tabuleiro[2] !== vazio && tabuleiro[2] === tabuleiro[4] && tabuleiro[4] === tabuleiro[6]) {
     ganhou = true;
-    if (tabuleiro[0] === player1) {
+    if (tabuleiro[2] === player1) {
       alert('ganhou jogador O');
       placarO += 1;
       document.getElementById("scoreO").innerHTML = placarO;
     }
-    else if (tabuleiro[0] === player2) {
+    else if (tabuleiro[2] === player2) {
       alert('ganhou jogador X');
       placarX += 1;
       document.getElementById("scoreX").innerHTML = placarX;
