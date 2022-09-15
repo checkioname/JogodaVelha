@@ -29,14 +29,7 @@ function reset() {
   }
 }
 
-// function verificaGanhador() {
-//   //testar a primeira linha
-//   if (tabuleiro[i] !== vazio &&
-//     tabuleiro[i] === tabuleiro[i+1] && tabuleiro[i] === tabuleiro[i+2]) {
-//     alert('ganhou');
-//     ganhou = true;
-//   }
-// }
+
 
 function verificaGanhador() {
   if (tabuleiro[0] !== vazio && tabuleiro[0] === tabuleiro[1] && tabuleiro[0] === tabuleiro[2]) {
@@ -53,7 +46,21 @@ function verificaGanhador() {
     }
   }
 
-  else if (tabuleiro[0] !== vazio && tabuleiro[0] === tabuleiro[3] && tabuleiro[0] === tabuleiro[6]) {
+  else if (tabuleiro[2] !== vazio && tabuleiro[2] === tabuleiro[4] && tabuleiro[4] === tabuleiro[6]) {
+    ganhou = true;
+    if (tabuleiro[0] === player1) {
+      alert('ganhou jogador O');
+      placarO += 1;
+      document.getElementById("scoreO").innerHTML = placarO;
+    }
+    else if (tabuleiro[0] === player2) {
+      alert('ganhou jogador X');
+      placarX += 1;
+      document.getElementById("scoreX").innerHTML = placarX;
+    }
+  }
+  
+    else if (tabuleiro[0] !== vazio && tabuleiro[0] === tabuleiro[3] && tabuleiro[0] === tabuleiro[6]) {
     ganhou = true;
     if (tabuleiro[0] === player1) {
       alert('ganhou jogador O');
