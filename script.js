@@ -34,12 +34,12 @@ function verificaGanhador() {
     if (tabuleiro[0] == player1) {
       cont_player1 += 1
       alert('O ganhou');
-      document.getElementById("cpu").innerHTML = cont_player1
+      document.getElementById("scoreO").innerHTML = cont_player1
     }
     else if (tabuleiro[0] == player2){
       cont_player2 +=1
       alert('X ganhou');
-      document.getElementById("jogador").innerHTML = cont_player2
+      document.getElementById("scoreX").innerHTML = cont_player2
     }
   }
 
@@ -49,12 +49,12 @@ function verificaGanhador() {
     if (tabuleiro[0] == player1) {
       cont_player1 += 1
       alert('O ganhou');
-      document.getElementById("cpu").innerHTML = cont_player1
+      document.getElementById("scoreO").innerHTML = cont_player1
     }
     else if (tabuleiro[0] == player2){
       cont_player2 +=1
       alert('X ganhou');
-      document.getElementById("jogador").innerHTML = cont_player2
+      document.getElementById("scoreX").innerHTML = cont_player2
     }
   } 
 
@@ -64,12 +64,12 @@ function verificaGanhador() {
     if (tabuleiro[0] == player1) {
       cont_player1 += 1
       alert('O ganhou');
-      document.getElementById("cpu").innerHTML = cont_player1
+      document.getElementById("scoreO").innerHTML = cont_player1
     }
     else if (tabuleiro[0] == player2){
       cont_player2 +=1
       alert('X ganhou');
-      document.getElementById("jogador").innerHTML = cont_player2
+      document.getElementById("scoreX").innerHTML = cont_player2
     }
   }
 
@@ -79,12 +79,12 @@ function verificaGanhador() {
     if (tabuleiro[8] == player1) {
       cont_player1 += 1
       alert('O ganhou');
-      document.getElementById("cpu").innerHTML = cont_player1
+      document.getElementById("scoreO").innerHTML = cont_player1
     }
     else if (tabuleiro[8] == player2){
       cont_player2 +=1
       alert('X ganhou');
-      document.getElementById("jogador").innerHTML = cont_player2
+      document.getElementById("scoreX").innerHTML = cont_player2
     }
   }
 
@@ -94,12 +94,12 @@ function verificaGanhador() {
     if (tabuleiro[2] == player1) {
       cont_player1 += 1
       alert('O ganhou');
-      document.getElementById("cpu").innerHTML = cont_player1
+      document.getElementById("scoreO").innerHTML = cont_player1
     }
     else if (tabuleiro[2] == player2){
       cont_player2 +=1
       alert('X ganhou');
-      document.getElementById("jogador").innerHTML = cont_player2
+      document.getElementById("scoreX").innerHTML = cont_player2
     }
   }
 
@@ -109,12 +109,12 @@ function verificaGanhador() {
     if (tabuleiro[2] == player1) {
       cont_player1 += 1
       alert('O ganhou');
-      document.getElementById("cpu").innerHTML = cont_player1
+      document.getElementById("scoreO").innerHTML = cont_player1
     }
     else if (tabuleiro[2] == player2){
       cont_player2 +=1
       alert('X ganhou');
-      document.getElementById("jogador").innerHTML = cont_player2
+      document.getElementById("scoreX").innerHTML = cont_player2
     }
   }
 
@@ -124,12 +124,12 @@ function verificaGanhador() {
     if (tabuleiro[4] == player1) {
       cont_player1 += 1
       alert('O ganhou');
-      document.getElementById("cpu").innerHTML = cont_player1
+      document.getElementById("scoreO").innerHTML = cont_player1
     }
     else if (tabuleiro[4] == player2){
       cont_player2 +=1
       alert('X ganhou');
-      document.getElementById("jogador").innerHTML = cont_player2
+      document.getElementById("scoreX").innerHTML = cont_player2
     }
   }
   
@@ -139,12 +139,12 @@ function verificaGanhador() {
     if (tabuleiro[4] == player1) {
       cont_player1 += 1
       alert('O ganhou');
-      document.getElementById("cpu").innerHTML = cont_player1
+      document.getElementById("scoreO").innerHTML = cont_player1
     }
     else if (tabuleiro[4] == player2){
       cont_player2 +=1
       alert('X ganhou');
-      document.getElementById("jogador").innerHTML = cont_player2
+      document.getElementById("scoreX").innerHTML = cont_player2
     }
   }
 
@@ -152,7 +152,7 @@ function verificaGanhador() {
     tabuleiro[4] !== vazio && tabuleiro[5] !== vazio && tabuleiro[6] !== vazio && tabuleiro[7] !== vazio && tabuleiro[8] !== vazio){
     cont_empate += 1;
     alert('Foi empate');
-    document.getElementById("empate").innerHTML = cont_empate;
+    document.getElementById("empates").innerHTML = cont_empate;
   }
 }
 
@@ -174,10 +174,3 @@ function jogada(numero) {
 
 
 }
-
-
-
-
-
-
-
